@@ -1,0 +1,396 @@
+/* Estilos para la barra superior */
+
+
+/* Estilo para el cuadro de registro (inicialmente oculto) */
+.registro-usuario {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+/* Estilos para el botón "Cerrar" del cuadro de registro */
+.cerrar-registro {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.barra-superior {
+    background-color: #87CEFA;
+    /* Azul cielo */
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 2200px;
+    margin: 0 auto;
+}
+
+/* Estilos para el logo */
+logo polishop.png {
+    height: 40px;
+    /* LOGO*/
+}
+
+/* Estilos para la barra de búsqueda */
+.barra-busqueda {
+    flex-grow: 10;
+    /* Hace que la barra de búsqueda ocupe todo el espacio disponible */
+    margin: 0 40px;
+    /* Agregamos un margen para separar los elementos */
+}
+
+.barra-busqueda input {
+    width: 90%;
+    /* La barra de búsqueda ocupa todo el ancho disponible */
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+}
+
+.barra-busqueda button {
+    margin-top: 00px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.barra-busqueda button img {
+
+    height: 30px;
+    width: 30;
+    /* Ajusta el tamaño del ícono de búsqueda */
+}
+
+/* Estilos para el botón de "Mi Cuenta" */
+.mi-cuenta button {
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para las secciones */
+.secciones {
+    display: flex;
+}
+
+.secciones button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+
+
+}
+
+.secciones button::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    /* Ajusta la posición vertical de la línea */
+    right: 0;
+    height: calc(100% - 10px);
+    /* Ajusta la altura de la línea */
+    width: 1px;
+    background-color: #000;
+    /* Color de la línea */
+}
+
+/* Añade este código a tu archivo polishop.css */
+
+.ofertas,
+.compra,
+.recoge {
+    float: right;
+    /* Mueve los botones hacia la derecha */
+    margin-left: 10px;
+    /* Añade un espacio entre los botones */
+}
+
+/* No pude acomodar los botones hacia la derecha, para optimizar tiempo y poder avanzar se dejan del lado izquierdo junto a los otros*/
+/* Añade este código a tu archivo polishop.css */
+/* Estilos para los botones */
+button {
+    padding: 5px 5px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 0px;
+    /* Añade margen entre los botones */
+}
+
+button:hover {
+    background-color: #f0f0f0;
+    /* Cambia el color de fondo al pasar el mouse (funcion que no sirvio) */
+}
+
+.compra-ya {
+    text-align: center;
+    margin-top: -30px;
+    /* Ajusta el margen superior según sea necesario */
+}
+
+.compra-ya img {
+    width: 450px;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+    cursor: pointer;
+}
+
+/* ... Tus estilos actuales ... */
+
+.circulos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    /* Ajusta el espacio entre la barra superior y los círculos según sea necesario */
+}
+
+.circulo {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    /* Ajusta el espacio entre la imagen y el texto */
+}
+
+.circulos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* Ajusta el espacio entre la barra superior y los círculos según sea necesario */
+}
+
+.circulo {
+    width: 300px;
+    /* Ajuste del tamaño del círculo */
+    height: 250px;
+    /* Ajuste del tamaño del círculo */
+    border: 2px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.boton-imagen {
+    width: 60px;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+    cursor: pointer;
+}
+
+.circulo p {
+    margin: 300px 0 0;
+    /* Ajusta el espacio entre el texto y el borde inferior del círculo */
+    font-size: 14px;
+}
+
+.circulo.informatica {
+    background-color: #E1BEE7;
+    /* Color morado claro para INFORMÁTICA */
+}
+
+.circulo.mercado {
+    background-color: #F5F5F5;
+    /* Color gris claro para MERCADO */
+}
+
+.circulo.moda {
+    background-color: #FFCCBC;
+    /* Color naranja claro para MODA */
+}
+
+.circulo.informatica .boton-imagen {
+    width: 60px;
+    /* Ajusta el tamaño según sea necesario */
+    height: 60px;
+    /* Ajusta el tamaño según sea necesario */
+    margin: auto;
+    /* Esto centrará la imagen dentro del círculo */
+    cursor: pointer;
+}
+
+.circulo.informatica .boton-imagen {
+    position: relative;
+    top: 100%;
+    /* Ajusta la posición vertical de la imagen */
+    left: 55%;
+    /* Ajusta la posición horizontal de la imagen */
+    transform: translate(-50%, -50%);
+    /* Centra la imagen */
+    width: 300px;
+    /* Ajusta el tamaño según sea necesario */
+    height: 300px;
+    /* Ajusta el tamaño según sea necesario */
+    cursor: pointer;
+}
+
+.circulo.informatica p {
+    position: relative;
+    top: -100px;
+    /* Ajusta el espacio superior del texto según sea necesario */
+    font-size: 14px;
+    /* Si deseas ajustar el tamaño del texto */
+    font-weight: bold;
+}
+
+.circulo.mercado .boton-imagen {
+    position: relative;
+    top: 100%;
+    /* Ajusta la posición vertical de la imagen */
+    left: 50%;
+    /* Ajusta la posición horizontal de la imagen */
+    transform: translate(-50%, -50%);
+    /* Centra la imagen */
+    width: 300px;
+    /* Ajusta el tamaño según sea necesario */
+    height: 300px;
+    /* Ajusta el tamaño según sea necesario */
+    cursor: pointer;
+}
+
+.circulo.mercado p {
+    position: relative;
+    top: -120px;
+    /* Ajusta el espacio superior del texto según sea necesario */
+    font-size: 14px;
+    /* Si deseas ajustar el tamaño del texto */
+    font-weight: bold;
+}
+
+.circulo.moda .boton-imagen {
+    position: relative;
+    top: 115%;
+    /* Ajusta la posición vertical de la imagen */
+    left: 52%;
+    /* Ajusta la posición horizontal de la imagen */
+    transform: translate(-50%, -50%);
+    /* Centra la imagen */
+    width: 300px;
+    /* Ajusta el tamaño según sea necesario */
+    height: 300px;
+    /* Ajusta el tamaño según sea necesario */
+    cursor: pointer;
+}
+
+.circulo.moda p {
+    position: relative;
+    top: -150px;
+    /* Ajusta el espacio superior del texto según sea necesario */
+    font-size: 14px;
+    /* Si deseas ajustar el tamaño del texto */
+    font-weight: bold;
+}
+
+.anuncio-ofertas {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-60%);
+}
+
+.anuncio-ofertas img {
+    width: 80%;
+    height: 80;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+.anuncio-ofertas {
+    position: fixed;
+    bottom: 30px;
+    /* Ajusta la distancia desde el borde inferior */
+    right: 00px;
+    /* Ajusta la distancia desde el borde derecho */
+    transform: translateX(-40%);
+}
+
+.anuncio-ofertas img {
+    width: 80%;
+    /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
+/* Agrega sombras sutiles a elementos */
+.elemento {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Utiliza bordes redondeados */
+.elemento {
+    border-radius: 10px;
+}
+
+/* Añade bordes con diferentes estilos */
+.elemento {
+    border: 1px solid #ccc;
+}
+
+.anuncio-ofertas img {
+    border-radius: 10px;
+}
+
+
+
+/*CODIGO POR MARLON HUERFANO*/
+
+
+.card-group h2,
+h3,
+p {
+    color: black;
+}
+
+.card-group h2,
+h3,
+h1,
+h4,
+h5 {
+    text-align: center;
+}
+
+.titulo {
+    color: goldenrod;
+}
+
+.card-group {
+    margin-bottom: 40px;
+    /* Adjust the value to control the spacing */
+}
+
+.card {
+    margin: 20px 0px 20px 20px;
+    /* Adjust the values to control the spacing */
+}
+
+.card img {
+    width: 200px;
+    height: 150px;
+    margin-top: 5%;
+}
+
+.detalle {
+    width: auto;
+    height: auto;
+    margin-top: 5%;
+}
+
+/*CODIGO POR HERMANO*/
